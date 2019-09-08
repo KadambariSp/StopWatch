@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/bgbtngreen"
+
+        android:text="START NOW"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/btnred"
+
+        android:text="STOP WORKOUT"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubSplash"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/btnred"
+
+        android:text="RESET "
+        android:textColor="#000000"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStop"
+        app:layout_constraintVertical_bias="0.375">
+
+
+    </Button>
+
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="266dp"
+        android:layout_height="84dp"
+        android:text="#FFF"
+
+
+        android:textColor="@android:color/background_light"
+        android:textSize="62sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icanchor">
+
+
+    </Chronometer>
+
+    <ImageView
+        android:id="@+id/icanchor"
+        android:layout_width="358dp"
+
+        android:layout_height="357dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+
+        android:gravity="center"
+
+
+        android:src="@drawable/icanchor"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivSplash"
+        android:layout_width="276dp"
+
+        android:layout_height="247dp"
+        android:layout_marginTop="50dp"
+
+
+        android:gravity="center"
+
+
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
